@@ -1,0 +1,165 @@
+<!-- 
+
+Kamsiyochukwu Ikwuetoghu 
+
+Web Development 
+
+Mrs. Hoitink 
+
+Pembina Trails Collegiate 
+
+October 21, 2024 
+
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set up the page character type and make sure it works well on all devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to external icons like Facebook, Instagram, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Set the title of the page (what shows up on the browser tab) -->
+    <title>Contact</title>
+
+    <!-- Inline CSS that styles different elements on the page -->
+    <style>
+        /* This makes the image take up the full width of the page */
+
+        /* This sets up the form container with a border, padding, and space around it */
+        .form-container {
+            max-width: 80%;
+            margin: auto;
+            border: 1px solid #797979;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 8%;
+        }
+
+        /* This makes labels (like First, Last, etc.) display one below the other */
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* This makes the input fields (like textboxes) and textarea bigger and adds some padding */
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* This styles the submit button, making it look nice and clickable */
+        button {
+            padding: 10px 15px;
+            background-color: rgb(36,36,36);
+            border-radius: 4px;
+            color: white;
+        }
+
+        /* This changes the button color when you hover over it */
+        button:hover {
+            color: rgb(255, 157, 37);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- The navigation menu with links to different pages of the website -->
+    <nav>
+        <ul>
+            <li id="styled-by-id"><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li> <!-- Link to the home page -->
+            <li id="styled-by-id"><a href="contact.html"><i class="fas fa-phone icon"></i>Contact</a></li>
+            <li id="styled-by-id"><a href="stores.html"><i class="fas fa-store icon"></i>Stores</a></li>
+            <li id="styled-by-id"><a href="jobs.html"><i class="fas fa-briefcase icon"></i>Services</a></li>
+            <li id="styled-by-id"><a href="https://www.instagram.com/ocwinnipeg/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li id="styled-by-id"><a href="https://g.co/kgs/6nbh1mv" target="_blank"><i class="fas fa-info"></i></a></li>
+            <li id="styled-by-id"><a href="https://www.tiktok.com/@ocwinnipeg?lang=en" target="_blank"><i style="font-size: 15px" class="fab fa-tiktok fa-2x"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Big image that is shown at the top of the contact page -->
+    <img style="margin-bottom: 8%;" id="image" src="Images/contact.JPG"/>
+    </header>
+    <main>
+    <!-- Container that holds the contact details and form -->
+    <div class="form-container">
+        <!-- Section showing guest services information -->
+        <h2>Guest Services</h2>
+        <p>Conveniently located in the center of the shopping centre just south of the Food Court, between Roots and the Gap.</p>
+        <p>T: 204-318-2520</p>
+        <p>E: guestservices@gmail.com</p>
+
+        <!-- Section showing administration office information -->
+        <h2>Administration Office</h2>
+        <p>Outlet Collection Winnipeg</p>
+        <p>Administration Office</p>
+        <p>555 Sterling Lyon Parkway</p>
+        <p>Winnipeg, Manitoba R3P 2T3</p>
+
+        <!-- Section for contacting about media, marketing, or tourism -->
+        <h2>Media, Marketing, and Tourism Opportunities</h2>
+
+        <!-- A form for users to submit their details and messages -->
+        <form id="myForm" method="post">
+            <label for="first-name">First*</label>
+            <input type="text" id="first-name" name="first" required> <!-- Textbox for first name -->
+
+            <label for="last-name">Last*</label>
+            <input type="text" id="last-name" name="last" required> <!-- Textbox for last name -->
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required> <!-- Textbox for email -->
+
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" rows="4" required></textarea> <!-- Textbox for the message -->
+
+            <br/>
+
+            <!-- Submit button that sends the form -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- JavaScript that prevents the form from submitting and shows an alert with the input value -->
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                
+                // Display an alert with the value the user typed in
+                const inputValue = document.getElementById('first-name').value;
+                alert('You submitted: ' + inputValue);
+
+                // Reset the form fields after submission
+                document.getElementById('myForm').reset();
+            });
+        </script>
+    </div>
+    </main>
+    <!-- Footer with copyright and important links -->
+    <div class="footer">
+        <footer>
+            <p>&copy; 2025 Kamsiyochukwu Ikwuetoghu | All Rights Reserved</p>
+            <a href="https://www.shoppingcentreleasingcanada.com/outlet-collection-winnipeg.html" target="_blank">Leasing Information</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/tenant-portal/l" target="_blank">Tenant Portal</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/code-of-conduct/" target="_blank">Code of Conduct</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/terms-of-use/" target="_blank">Terms of Service</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/privacy-policy/" target="_blank">Privacy Policy</a><br/>
+            <p>555 Sterling Lyon Parkway <br/> Winnipeg, Manitoba R3P 2T3</p>
+            <ul>
+                <li><a href="https://www.instagram.com/ocwinnipeg/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/ocwinnipeg" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

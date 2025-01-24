@@ -1,0 +1,255 @@
+<!-- 
+
+Kamsiyochukwu Ikwuetoghu 
+
+Web Development 
+
+Mrs. Hoitink 
+
+Pembina Trails Collegiate 
+
+October 21, 2024 
+
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character type and make sure the page works well on all devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to icons that we use on the page (like Instagram and phone icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    
+    <!-- Title of the page that appears on the browser tab -->
+    <title>Homepage</title>
+    
+    <!-- The CSS rules that make the page look good -->
+    <style>
+    /* Container that organizes the items into 4 columns */
+    .container2{
+        width: 100%;  
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Make 4 equal columns */
+        gap: 0px;
+        left: 34%;
+    }
+    .container2 p{
+        width: 75%;
+        margin-left: 10%;
+    }
+    .container2 img{
+        margin-left: 15%;
+    }
+
+    /* Another grid layout with 3 equal columns */
+    .container3{
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Make 3 equal columns */
+        gap: 0px;
+        margin-left: 29%;
+    }
+
+    /* A third grid layout with 3 equal columns */
+    .container4{
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Make 3 equal columns */
+        gap: 0px;
+        margin-left: 29%;
+    }
+
+    /* Similar to the previous sections, but with extra bottom space */
+    .contain5{
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Make 3 equal columns */
+        gap: 0px;
+        margin-left: 29%;
+        margin-bottom: 8%;
+    }
+
+    /* Container3 heading has specific width and space at the bottom */
+    .container3 h1{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    /* Container4 paragraph has specific width and space at the bottom */
+    .container4 p{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    /* Make sure images take up full width and adjust to the screen */
+    #image{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Style for buttons: make them look like clickable blocks */
+    .button {
+        padding: 12px 24px;
+        border-radius: 5px;
+    }
+
+    /* Block section style with grid layout and margin at the bottom */
+    .block{
+        width: 100%;
+        margin: 0;
+        background-color: rgb(240, 240, 240);
+        height: 200px;
+        display: grid;
+        margin-bottom: 8%;
+    }
+
+    /* Block heading has specific space at the bottom and left */
+    .block h1{
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+
+    /* Style for buttons inside the block and hover effect */
+    .block .button{
+        background-color: rgb(240, 240, 240);
+        padding: 5px 10px;
+    }
+    .block .button:hover{
+        background-color: rgb(255, 157, 37);
+    }
+
+    /* Container5 layout, margin on the left and bottom space */
+    .container5{
+        margin-left: 8%;
+        margin-bottom: 8%;
+        display: grid;
+    }
+
+    /* Button padding inside container5 */
+    .container5 .button{
+        padding: 5px 10px;
+    }
+
+    /* Container5 heading is a bigger size */
+    .container5 h1{
+        font-size: 30px;
+    }
+        /* Make images change when you hover over them (they get a little see-through) */
+        .grid-container img:hover{
+        opacity: 0.5;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- The navigation menu at the top with links to different pages -->
+    <nav>
+        <ul>
+            <li id="styled-by-id"><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li> <!-- Link to the home page --> 
+            <li id="styled-by-id"><a href="contact.html"><i class="fas fa-phone icon"></i>Contact</a></li>
+            <li id="styled-by-id"><a href="stores.html"><i class="fas fa-store icon"></i>Stores</a></li>
+            <li id="styled-by-id"><a href="jobs.html"><i class="fas fa-briefcase icon"></i>Services</a></li>
+            <li id="styled-by-id"><a href="https://www.instagram.com/ocwinnipeg/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li id="styled-by-id"><a href="https://g.co/kgs/6nbh1mv" target="_blank"><i class="fas fa-info"></i></a></li>
+            <li id="styled-by-id"><a href="https://www.tiktok.com/@ocwinnipeg?lang=en" target="_blank"><i style="font-size: 15px" class="fab fa-tiktok fa-2x"></i></a></li>
+        </ul>
+    </nav>
+   
+    <!-- Big image at the top of the page -->
+    <img style="margin-bottom: 20px;" id="image" src="Images/fff.JPG"/>
+    </header>
+    <main>
+    <!-- Container with text and some images about the outlet -->
+    <div class="container2">
+        <p>
+            <span style="font-size: 32px; font-weight: bolder;margin-bottom: 20px;"> OUTLET COLLECTION</span> <br/>Welcome to Manitoba’s premier outlet destination 
+            where fashion, plus outlets, dining and 
+            entertainment equals an attraction you have to experience to believe…
+        </p>
+        <img src="Images/engin-akyurt-Lr7kDZmFq3U-unsplash.jpg"/>
+        <img src="Images/stock-photo-young-man-in-t-shirt.jpg"/>
+        <img src="Images/photo-1534308983496-4fabb1a015ee.jpg"/>
+    </div>
+
+    <!-- Section showing the main things to do: Plan, Shop, Dine -->
+    <div class="container3">
+        <h1>Plan</h1>
+        <h1>Shop</h1>
+        <h1>Dine</h1>
+    </div>
+
+    <!-- Section with more details about the outlet -->
+    <div class="container4">
+        <p>
+            Finding must-have brands, delicious food, and exciting entertainment all in one place is easy at Outlet Collection Winnipeg. 
+            Discovering your favorite places is what makes it fun!
+        </p>
+        <p>
+            Whether you are shopping for everyday essentials, the perfect gift, or any special occasion Outlet Collection Winnipeg retailers will keep you on trend.
+        </p>
+        <p>
+            Meeting up with friends or taking a break to recharge, indulge in the many dining options at Outlet Collection Winnipeg to satisfy all your cravings.
+        </p>
+    </div>
+
+    <!-- Buttons with links for more information like hours and directions -->
+    <div class="contain5">
+        <a href="develop.html"><button class="button">Hours and Directions</button></a>
+        <a href="stores.html"><button class="button">See All Stores</button></a>
+        <a href="https://www.outletcollectionwinnipeg.com/directory/?c=food-drink" target="_blank"><button class="button">See All Restaurants</button></a>
+    </div>
+
+    <!-- Section with a button to get social media links -->
+    <div class="block">
+        <br/>
+        <h1>Follow Us</h1>
+        <a href="https://lnk.bio/ocwinnipeg" target="_blank"><button style="margin-left: 30px; margin-bottom: 20px;" class="button">Get Our Socials</button></a>
+    </div>
+
+    <!-- Grid of images linked to Instagram posts -->
+    <div class="grid-container">
+        <a href="https://www.instagram.com/p/DDhkQRLsJZX/" target="_blank"><img src="Images/shoe.JPG"/></a>
+        <a href="https://www.instagram.com/p/DEaNsSPBs2X/" target="_blank"><img src="Images/luggage.JPG"/></a>
+        <a href="https://www.instagram.com/p/DEpqGqaPOAx/" target="_blank"><img src="Images/sweater.JPG"/></a>
+        <a href="https://www.instagram.com/p/DExY3H0Jduk/" target="_blank"><img src="Images/jacket.JPG"/></a>
+        <a href="https://www.instagram.com/p/DEKw8BYpQBk/" target="_blank"><img src="Images/food.JPG"/></a>
+        <a href="https://www.instagram.com/p/DCrmYiQNXan/" target="_blank"><img src="Images/dog.JPG"/></a>
+        <a href="https://www.instagram.com/p/DDxA_VCKQUA/" target="_blank"><img src="Images/heels.JPG"/></a>
+        <a href="https://www.instagram.com/p/DCza75Zv-Mg/" target="_blank"><img src="Images/couch.JPG"/></a>
+    </div>
+
+    <!-- Section for signing up and staying connected -->
+    <div class="container5">
+        <h1>SIGN-UP AND STAY CONNECTED</h1>
+        <p>Be the first to hear about stores, special offers, contests, giveaways,
+        events, and more with regular updates directly to your inbox.</p>
+        <a href="https://www.outletcollectionwinnipeg.com/lets-connect/"><button class="button">Sign Up Today</button></a>
+    </div>
+    </main>
+    <!-- Footer with copyright and other important links -->
+    <div class="footer">
+        <footer>
+            <br/>
+            <p>&copy; 2025 Kamsiyochukwu Ikwuetoghu | All Rights Reserved</p>
+            <a href="https://www.shoppingcentreleasingcanada.com/outlet-collection-winnipeg.html" target="_blank">Leasing Information</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/tenant-portal/l" target="_blank">Tenant Portal</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/code-of-conduct/" target="_blank">Code of Conduct</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/terms-of-use/" target="_blank">Terms of Service</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/privacy-policy/" target="_blank">Privacy Policy</a><br/>
+            <p>555 Sterling Lyon Parkway <br/> Winnipeg, Manitoba R3P 2T3</p>
+            <ul>
+                <li><a href="https://www.instagram.com/ocwinnipeg/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/ocwinnipeg" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

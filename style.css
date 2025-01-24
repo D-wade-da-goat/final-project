@@ -1,0 +1,143 @@
+ /* 
+This website employs an analogous color scheme, featuring warm colors such as orange 
+for the links and button elements. These colors are adjacent on the color wheel, 
+creating an appealing look. 
+
+Additionally, neutral colors like white, gray, and black are used throughout the design. 
+These neutrals help improve readability and aesthetic. The contrast 
+between the bright colors and the neutrals makes text easier to read. 
+*/
+
+*{
+    font-family: sans-serif;
+  }
+html {
+    scroll-behavior: smooth;    /* Enables smooth scrolling throughout the page. */
+}
+#image{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+ul {
+    list-style-type: none;      /* Removes bullet points from list items. */
+    margin-top: -1%;                  /* Removes any outer margins around the list. */
+    padding: 0;                 /* Removes inner padding around the list. */
+    overflow: hidden;           /* Ensures that no overflow occurs outside the list. */
+    background-color: #000000;  /* Sets the list's background color to dark grey. */
+    font-size: 18px;            /* Sets the font size of list text. */
+    font-family: sans-serif;    /* Uses sans-serif font for the list text. */
+    word-spacing: 1px;          /* Adds slight spacing between words in the list. */
+    position: fixed;
+    width: 99%;
+}
+#styled-by-id {
+    float: left;
+    display: grid; 
+}
+#styled-by-id a .icon { 
+    margin-right: 8px;
+} 
+/* Styles links inside list items, ensuring they are clickable and look good. */
+li a {
+    display: inline-block;      /* Makes the link an inline block that can be clicked. */
+    color: rgb(255, 255, 255);  /* Sets the link color to white. */
+    text-align: center;         /* Centers the text inside the link. */
+    padding: 22px;            /* Adds space around the link. */
+    text-decoration: none;      /* Removes the underline from the link. */
+    margin: 0;        /* Adds space to the left of each link. */
+    background-color: #000000;
+}
+.button:hover{
+    background-color: rgb(255, 157, 37);
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+}
+
+/* Adds hover effect to links inside list items, changing color and background. */
+li a:hover {
+    background-color: #363636;  /* Turns the background to black when hovering. */
+    color: rgb(255, 157, 37);   /* Changes the text color to orange when hovering. */
+}
+
+/* Styles paragraphs inside '.content2'. */
+p {
+    font-size: 16px;            /* Sets the font size for the paragraph text. */
+    word-spacing: 2px;          /* Adds spacing between words for clarity. */
+}
+
+/* Styles the h1 element with specific size and word-spacing. */
+h1 {
+    font-size: 32px;            /* Sets the font size of h1. */
+    word-spacing: 2px;          /* Adds space between words for better readability. */
+}
+/* Style for images */
+img {
+    width: 315px; /* Set the width of the image */
+    display: inline; /* Display images inline */
+    height: 315px; /* Set the height of the image */
+    margin-right: 10px; /* Add space to the right of the image */
+}
+
+/* Style for the footer */
+.footer {
+    width: 100%; /* Set the footer to full width */
+    background-color: rgb(233, 233, 233); /* Light gray background color */
+    line-height: 140%; /* Set line height for better readability */
+}
+
+/* Style for paragraphs within the footer */
+.footer p {
+    margin-left: 4%; /* Add margin to the left */
+    color: black; /* Set text color to black */
+    font-size: 16px; /* Set font size */
+}
+
+/* Style for links within the footer */
+.footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set link color to black */
+    margin-left: 4%; /* Add margin to the left of links */
+    font-size: 16px; /* Set font size for links */
+}
+
+/* Style for links on hover within the footer */
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style for the unordered list in the footer */
+.footer ul {
+    list-style-type: none; /* Remove bullets from the list */
+    background-color: rgb(233, 233, 233); /* Set background color */
+    overflow: hidden; /* Clear floats */
+}
+
+/* Style for list items in the footer */
+.footer li a {
+    color: rgb(0, 0, 0); /* Set link color to black */
+    background-color: rgb(233, 233, 233); /* Set background color */
+    float: left; /* Align items to the left */
+    font-size: 24px; /* Set font size for list item links */
+}
+    /* Grid layout for images, with spacing between them */
+    .grid-container {
+        margin-bottom: 8%;
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Make 4 equal columns */
+        gap: 0px;
+        margin-left: 8%;
+    }
+        /* Button styles (for buttons like 'Safety Measures', 'Family Services', etc.) */
+        .button {
+            background-color: #ffffff;
+            border: 2px solid black;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+        }

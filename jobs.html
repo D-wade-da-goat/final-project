@@ -1,0 +1,198 @@
+<!-- 
+
+Kamsiyochukwu Ikwuetoghu 
+
+Web Development 
+
+Mrs. Hoitink 
+
+Pembina Trails Collegiate 
+
+October 21, 2024 
+
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set up the character type (UTF-8) and make sure it works well on mobile devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to an external CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to an external CSS file for Font Awesome icons (for things like Instagram, Facebook, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Set the title of the webpage that appears on the tab of the browser -->
+    <title>Services</title>
+
+    <!-- Internal CSS to style the page elements -->
+    <style>
+
+        /* This styles the text paragraph (description) in the center */
+        #p {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+            width: 60%;
+            font-weight: bold;
+            margin-bottom: 8%;
+        }
+
+        /* Button styles (for buttons like 'Safety Measures', 'Family Services', etc.) */
+        .button {
+            padding: 12px 6px;
+        }
+
+        /* Grid style for arranging buttons in a row with gaps between them */
+        .grid-container {
+            margin: 0 auto;
+            width: 80%;
+            gap: 40px;
+            margin-bottom: 8%;
+        }
+
+        /* Container style for the first section with image and text */
+        .container2 {
+            background-color: rgb(240, 240, 240);
+            width: 100%;
+            display: flex;
+            margin-bottom: 8%;
+        }
+
+        .container2 p {
+            width: 600px;
+        }
+
+        .container2 img {
+            width: 500px;
+            height: 300px;
+        }
+
+        /* Container style for the second section with image and text */
+        .container3 {
+            display: flex;
+            margin-bottom: 8%;
+        }
+
+        .container3 p {
+            margin-left: 100px;
+            width: 600px;
+            margin-right: 400px;
+        }
+
+        .container3 img {
+            width: 400px;
+            height: 200px;
+        }
+
+        /* Container style for the third section with image and text */
+        .container4 {
+            background-color: rgb(240, 240, 240);
+            width: 100%;
+            display: flex;
+            margin-bottom: 8%;
+        }
+
+        .container4 p {
+            width: 700px;
+        }
+
+        .container4 img {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- Navigation menu with links to other pages -->
+    <nav>
+        <ul>
+            <li id="styled-by-id"><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li> <!-- Link to Home page -->
+            <li id="styled-by-id"><a href="contact.html"><i class="fas fa-phone icon"></i>Contact</a></li>
+            <li id="styled-by-id"><a href="stores.html"><i class="fas fa-store icon"></i>Stores</a></li>
+            <li id="styled-by-id"><a href="jobs.html"><i class="fas fa-briefcase icon"></i>Services</a></li>
+            <li id="styled-by-id"><a href="https://www.instagram.com/ocwinnipeg/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li id="styled-by-id"><a href="https://g.co/kgs/6nbh1mv" target="_blank"><i class="fas fa-info"></i></a></li>
+            <li id="styled-by-id"><a href="https://www.tiktok.com/@ocwinnipeg?lang=en" target="_blank"><i style="font-size: 15px" class="fab fa-tiktok fa-2x"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Image at the top of the Services page -->
+    <img id="image" src="Images/services.JPG"/>
+    </header>
+    <!-- Text section below the image, explaining the shopping experience -->
+    <br/><br/>
+    <main>
+    <p id="p">
+        Outlet Collection Winnipeg is committed to providing an exceptional shopping experience for our guests.
+        Our friendly and knowledgeable Guest Services Representatives are available for your assistance.
+    </p>
+
+    <!-- Grid container that holds different service options as buttons -->
+    <div class="grid-container">
+        <button class="button">Safety Measures</button>
+        <button class="button">Family Services</button>
+        <button class="button">Tourism</button>
+        <button class="button">Gift Card</button>
+    </div>
+
+    <br/>
+
+    <!-- Section about Complimentary Bottle Warming and Family Services -->
+    <div class="container2">
+        <img src="Images/hats.JPG"/>
+        <p>
+            <span style="font-size: 20px; font-weight: bold;">COMPLIMENTARY BOTTLE WARMING AT GUEST SERVICES</span>
+            <br/><br/>
+            Four family washrooms (two located adjacent to the administration office north of the Food Court,
+            one located by the west end washrooms and one located by the east end washrooms)
+            Nursing room located in the ladies washroom (adjacent to the administration office)
+        </p>
+    </div>
+
+    <!-- Section about Amazon Lockers -->
+    <div class="container3">
+        <p>
+            <span style="font-size: 20px; font-weight: bold;">AMAZON LOCKER</span>
+            <br/><br/>
+            Amazon Hub Lockers are secure, self-service kiosks where you can pick up
+            Amazon.com packages at a time and place that is convenient for you.
+        </p>
+        <img src="Images/amazon.JPG"/>
+    </div>
+
+    <!-- Section about EV Charging Stations -->
+    <div class="container4">
+        <img src="Images/delight.JPG"/>
+        <p>
+            <span style="font-size: 20px; font-weight: bold;">EV CHARGING STATIONS</span>
+            <br/><br/>
+            EV charging stations now available! Plug in and charge up at our new Level
+            2 electric vehicle charging stations, located near the Food Hall Entrance.
+        </p>
+    </div>
+    </main>
+    <!-- Footer with copyright and additional links -->
+    <div class="footer">
+        <footer>
+            <p>&copy; 2025 Kamsiyochukwu Ikwuetoghu | All Rights Reserved</p>
+            <a href="https://www.shoppingcentreleasingcanada.com/outlet-collection-winnipeg.html" target="_blank">Leasing Information</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/tenant-portal/l" target="_blank">Tenant Portal</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/code-of-conduct/" target="_blank">Code of Conduct</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/terms-of-use/" target="_blank">Terms of Service</a><br/>
+            <a href="https://www.outletcollectionwinnipeg.com/privacy-policy/" target="_blank">Privacy Policy</a><br/>
+            <p>555 Sterling Lyon Parkway <br/> Winnipeg, Manitoba R3P 2T3</p>
+            <ul>
+                <li><a href="https://www.instagram.com/ocwinnipeg/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/ocwinnipeg" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
